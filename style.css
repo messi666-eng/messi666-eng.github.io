@@ -17,7 +17,11 @@ body {
 }
 a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; }
-.container { width: min(var(--width), calc(100% - 40px)); margin: 0 auto; }
+.container {
+  width: min(var(--width), calc(100% - 40px));
+  margin: 0 auto;
+  padding-left: 72px;
+}
 .site-header { padding: 82px 0 58px; }
 h1 {
   margin: 0 0 18px;
@@ -25,6 +29,7 @@ h1 {
   line-height: 1.15;
   letter-spacing: -.04em;
   font-weight: 650;
+  text-align: center;
 }
 .lead { max-width: 650px; margin: 0 0 12px; color: #4b5563; font-size: 1.08rem; }
 .location, .links { margin: 0; color: var(--muted); font-size: .94rem; }
@@ -52,7 +57,10 @@ footer {
   font-size: .82rem;
 }
 @media (max-width: 560px) {
-  .container { width: min(100% - 32px, var(--width)); }
+  .container {
+    width: min(100% - 32px, var(--width));
+    padding-left: 0;
+  }
   .site-header { padding-top: 52px; }
   .entry-heading, footer { display: block; }
   .entry-heading span { display: block; margin-top: 3px; }
